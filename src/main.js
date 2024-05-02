@@ -1,21 +1,41 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Lenis from 'lenis'
+import LocomotiveScroll from 'locomotive-scroll';
 gsap.registerPlugin(ScrollTrigger);
 
-const lenis = new Lenis()
 
-lenis.on('scroll', (e) => {
-  // console.log(e)
-})
+const locomotiveScroll = new LocomotiveScroll({
+  lenisOptions: {
+    wrapper: window,
+    content: document.documentElement,
+    lerp: 0.1,
+    duration: 1.2,
+    orientation: 'vertical',
+    gestureOrientation: 'vertical',
+    smoothWheel: true,
+    smoothTouch: false,
+    wheelMultiplier: 1,
+    touchMultiplier: 2,
+    normalizeWheel: true,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), 
+},
+});
 
-lenis.on('scroll', ScrollTrigger.update)
 
-gsap.ticker.add((time)=>{
-  lenis.raf(time * 1000)
-})
+// const lenis = new Lenis()
 
-gsap.ticker.lagSmoothing(0)
+// lenis.on('scroll', (e) => {
+//   // console.log(e)
+// })
+
+// lenis.on('scroll', ScrollTrigger.update)
+
+// gsap.ticker.add((time)=>{
+//   lenis.raf(time * 1000)
+// })
+
+// gsap.ticker.lagSmoothing(0)
 
 const specificElement = document.querySelector('.canva>.horizontal>.image');
 
@@ -150,14 +170,14 @@ const menuBar = ()=>{
       opacity: 0,
       ease: 'power4.out',
     })
-    tl.to('.menubar>.flex>.left',{
+    tl.from('.menubar>.flex>.left',{
       delay: .5,
       stagger: .2,
       // transform: `translateX(5vw)`,
-      marginRight: '10vw',
+      marginRight: '25vw',
       
     },'l')
-    tl.to('.menubar>.flex>.right',{
+    tl.from('.menubar>.flex>.right',{
       delay: .5,
       stagger: .2,
       // transform: `-translateX(0vw)`,
@@ -242,6 +262,8 @@ const footer = ()=>{
 
 })
 }
+
+
 
   svgAnimation()
   homepage()

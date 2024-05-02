@@ -22,7 +22,7 @@
   
 
       <nav class="nav w-full h-[10vh] bg--200 px-[3vw] flex items-center justify-between fixed z-[6]">
-        <div class="logo h-[10vh w-[10vw] relative z-[6]">
+        <div class="logo -mt-[5vw] lg:mt-0 h-[10vh w-[10vw] relative z-[6]">
           <a class="w-full h-full" href="">
             <svg
               width="94"
@@ -116,7 +116,7 @@
           <h3 class="uppercase close opacity-0 cursor-pointer">close</h3>
         </div>
       </nav>
-      <div class="home w-full h-screen bg-[#E7D2EB] relative">
+      <div class="home w-full h-screen  bg-[#E7D2EB] relative">
         <div
           class="wrapper translate-y-[50%] flex items-center justify-center w-full h-[55vh] overflow-hidden bg--400"
         >
@@ -127,17 +127,17 @@
           </h1>
         </div>
       </div>
-      <div class="menubar w-full h-0 top-[-100vh  bg-[] fixed flex justify-center items-center  overflow-hidden z-[5]">
-      <div class="flex flex-col gap-[3vw] text-center">
-        <h1 class="left cursor-pointer text-[15vw] leading-[.7] font-['schnyder_l'] translate-x-[5vw] capitalize inline w-fit">expertises</h1>
-        <h1 class="right cursor-pointer text-[15vw] leading-[.7] font-['schnyder_l'] -translate-x-[5vw] capitalize font-light inline w-fit">clients</h1>
-        <h1 class="left cursor-pointer text-[15vw] leading-[.7] font-['schnyder_l'] translate-x-[5vw] capitalize inline w-fit">love</h1>
-        <h1 class="right cursor-pointer text-[15vw] leading-[.7] font-['schnyder_l'] -translate-x-[5vw] capitalize font-light inline w-fit">contact</h1>
+      <div class="menubar w-full h-0 top-[-100vh  bg-[] fixed flex justify-center  sm:justify-between items-center  overflow-hidden z-[5]">
+      <div class="flex w-full h-full flex-col gap-[3vw items-center text-center gap-[15vw] lg:gap-[4vw] justify-center lg:justify-center">
+        <h1 class="left cursor-pointer text-[15vw] leading-[.7] font-['schnyder_l'] translate-x-[5vw capitalize inline w-fit">expertises</h1>
+        <h1 class="right cursor-pointer text-[15vw] leading-[.7] font-['schnyder_l'] -translate-x-[5vw capitalize font-light inline w-fit">clients</h1>
+        <h1 class="left cursor-pointer text-[15vw] leading-[.7] font-['schnyder_l'] translate-x-[5vw capitalize inline w-fit">love</h1>
+        <h1 class="right cursor-pointer text-[15vw] leading-[.7] font-['schnyder_l'] -translate-x-[5vw capitalize font-light inline w-fit">contact</h1>
       </div>
       </div>
 
-      <div class="text bg-[#E7D2EB] w-full h-screen relative px-[17vw]">
-        <h6 class="text-5xl font-['times_now'] leading-relaxed text-center">Pony was born from a dream, that of telling beautiful stories about beautiful brands. <br> 
+      <div class="text bg-[#E7D2EB] w-full h-[81vh] lg:h-screen relative flex flex-col items-center justify-center px-[5vw] px-[17vw">
+        <h6 class=" text-lg font-['times_now'] lg:text-4xl lg:leading-[5rem] text-center">Pony was born from a dream, that of telling beautiful stories about beautiful brands. <br> 
           Our mission is to give even more meaning to what you do and to reveal yourself to the world. <br>
           We are aware that it is sometimes difficult to talk about yourself or your project. <br>
           But we believe in the power of listening and paying attention to help you move from head talk to heart talk. <br>
@@ -146,18 +146,18 @@
 
       <div class="canva w-full min-h-screen bg-[#E7D2EB] flex flex-col">
         <h1 class="text-[15vw] font-['schnyder_l'] uppercase text-center pt-[4vw]">who is pony?</h1>
-       <div class="horizontal flex justify-evenly pb-[5vw] px-[12vw]">
-        <div class="image bg-[url(https://www.agencepony.fr/wp-content/uploads/2024/01/713bef3abc6301d7bb8587cbed4c509b.webp)]  flex justify-center items-center w-[35vw] h-[85vh] rotate-[10deg]">
+       <div class="horizontal flex flex-col  lg:flex lg:flex-row lg:justify-evenly pb-[5vw] px-[10vw] lg:px-[12vw]">
+        <div data-scroll data-scroll-speed="-.1" class="image bg-[url(https://www.agencepony.fr/wp-content/uploads/2024/01/713bef3abc6301d7bb8587cbed4c509b.webp)] mt-[10vw] lg:mt-0  flex justify-center items-center w-[80vw] h-[50vh] lg:w-[35vw] lg:h-[85vh] rotate-[10deg]">
           <img class=" w-1/2 h-1/2 object-cover" src="https://www.agencepony.fr/wp-content/uploads/2024/01/IMG_6648.webp" alt="">
         </div>
 
-        <div class="letter w-[35vw] h-[85vh] bg-[#FFFFFF] px-[3vw] py-[2vw] flex flex-col gap-[1rem] font-['courier_new'] -rotate-[10deg]">
-          <p>My name is Rébecca Chemouil, I was born in 1979 and I founded Pony in 2019. When I was little, I dreamed of saving gorillas and being a French teacher. </p>
-          <p>
+        <div data-scroll data-scroll-speed=".3"  class="letter w-[80vw] h-[50vh] lg:w-[35vw] lg:h-[85vh] bg-[#FFFFFF] px-[3vw] py-[2vw] flex flex-col gap-[1rem] font-['courier_new'] -rotate-[10deg]">
+          <p class="text-[.7rem] lg:text-[1rem]">My name is Rébecca Chemouil, I was born in 1979 and I founded Pony in 2019. When I was little, I dreamed of saving gorillas and being a French teacher. </p>
+          <p class="text-[.7rem] lg:text-[1rem]">
             I took a slight detour, finally spending twenty years in marketing and communications, in agencies and with advertisers. </p>
-            <p>
+            <p class="text-[.7rem] lg:text-[1rem] hidden lg:block">
               It was out of a deep desire to move the boundaries and assume that she wasn't like anyone that Pony was born. Far from marketing clichés and dogmas, I adopt a unique, joyful and authentic style in order to support clients from all backgrounds and meet wonderful people so that I never get bored. I like to be alongside those who have the courage to create, to build, to invent, to help them reveal themselves. </p>
-              <p>
+              <p class="text-[.7rem] lg:text-[1rem]">
                 I listen, I analyze and I identify the smallest detail, even the most buried, to make each subject a unique case in order to build together a positioning, an identity, a storytelling and a strategy that only resembles you .</p>
                 <img class="w-full h-1/2 object-cover translate--[50%]" src="https://www.agencepony.fr/wp-content/uploads/2024/01/sign.svg" alt="">
         </div>
@@ -170,41 +170,41 @@
       <div class="marquee w-full h-screen bg-[url(https://www.agencepony.fr/wp-content/uploads/2024/01/malik-shibly-Bdm8BNWz75E-unsplash.webp)] object-cover">
 
         <div class="line-one w- uppercase h-[30vh] flex items-center gap-[3vw] flex-nowrap whitespace-nowrap text-[#CEF0F5] font-['schnyder_l']">
-          <h2 class="text-[12vw]">pony club pony club pony club</h2>
+          <h2 class="text-[25vw] lg:text-[15vw]">pony club pony club pony club</h2>
    
         </div>
 
         <div class="line-two -translate-x-[30%]  w- uppercase h-[30vh] flex items-center gap-[3vw] flex-nowrap whitespace-nowrap text-[#CEF0F5] font-['schnyder_l']">
-          <h2 class="text-[12vw]">pony club</h2>
+          <h2 class="text-[25vw] lg:text-[15vw]">pony club</h2>
    
-          <h2 class="text-[12vw]">pony club</h2>
+          <h2 class="text-[25vw] lg:text-[15vw]">pony club</h2>
     
-          <h2 class="text-[12vw]">pony club</h2>
+          <h2 class="text-[25vw] lg:text-[15vw]">pony club</h2>
    
         </div>
 
         <div class="line-one w- uppercase h-[30vh] flex items-center gap-[3vw] flex-nowrap whitespace-nowrap text-[#CEF0F5] font-['schnyder_l']">
-          <h2 class="text-[12vw]">pony club</h2>
+          <h2 class="text-[25vw] lg:text-[15vw]">pony club</h2>
    
-          <h2 class="text-[12vw]">pony club</h2>
+          <h2 class="text-[25vw] lg:text-[15vw]">pony club</h2>
     
-          <h2 class="text-[12vw]">pony club</h2>
+          <h2 class="text-[25vw] lg:text-[15vw]">pony club</h2>
    
         </div>
        
       </div>
 
-      <div class="text-two w-full min-h-screen bg-[#FFF] relative px-[17vw]  flex flex-col gap-[3vw] pt-[5vw]">
-        <h2 class="text-4xl font-['times_now'] leading-relaxed text-center">Creative director, photographer, web designer, <br>
-          community manager, strat planner, director… <br>
-          The PONY community is vast, creative, motivated <br> and free. Here there is no  permanent contract, no <br> underpaid intern, each expert is freelance, and is <br> identified for their performance and emotional <br>
+      <div class="text-two w-full h-[70vh] min-h-scree bg-[#FFF] relative px-[5vw] px-[17vw  flex flex-col gap-[3vw] pt-[10vw] pt-[5vw">
+        <h2 class="text-lg  lg:text-3xl leading-[1.5] font-['times_now'] lg:leading-relaxed text-center">Creative director, photographer, web designer, 
+          community manager, strat planner, director… 
+          The PONY community is vast, creative, motivated  and free. Here there is no  permanent contract, no  underpaid intern, each expert is freelance, and is identified for their performance and emotional 
            intelligence. </h2>
-        <h2 class="text-4xl font-['times_now'] leading-relaxed text-center">
-          Why this model? <br>
-          To always have the freedom to truly choose who to work with. Each team is made up <br>
-          of talent and feeling, so that everyone is in their zone of genius and gives the best of themselves. <br>
-          And if it is necessary to call on another agency, we happily collaborate with the most inspiring and expert people possible. <br>
-          Beyond skills, the subject must animate everyone, make them vibrate. <br>
+        <h2 class="text-lg lg:text-3xl leading-[1.5] font-['times_now'] lg:leading-relaxed text-center">
+          Why this model? 
+          To always have the freedom to truly choose who to work with. Each team is made up 
+          of talent and feeling, so that everyone is in their zone of genius and gives the best of themselves. 
+          And if it is necessary to call on another agency, we happily collaborate with the most inspiring and expert people possible. 
+          Beyond skills, the subject must animate everyone, make them vibrate. 
           The client's state of mind and method must match those of the stakeholders, in order to reveal the best of all, and make each project a great adventure.</h2>
       </div>
 
